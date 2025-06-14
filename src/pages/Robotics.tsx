@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import RoboticsHero from '@/components/robotics/RoboticsHero';
@@ -7,6 +6,7 @@ import RoboticsFeatures from '@/components/robotics/RoboticsFeatures';
 import RoboticsStats from '@/components/robotics/RoboticsStats';
 import AIAgentPanel from '@/components/robotics/AIAgentPanel';
 import LLMCapabilities from '@/components/robotics/LLMCapabilities';
+import DeveloperToolsPanel from "@/components/robotics/DeveloperToolsPanel";
 
 const Robotics = () => {
   return (
@@ -19,6 +19,7 @@ const Robotics = () => {
         <AIAgentPanel />
         <LLMCapabilities />
         <RoboticsFeatures />
+        <DeveloperToolsPanel />
       </div>
     </div>
   );
