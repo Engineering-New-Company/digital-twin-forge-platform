@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -153,7 +152,7 @@ function RoboticsDevDocs() {
         <li><a href="https://platform.openai.com/docs/api-reference" target="_blank" rel="noopener">OpenAI API Reference</a></li>
       </ul>
       <p>
-        <b>Note:</b> For images, use <code>data:image/png;base64,...</code> URLs. For text, return <code>{"result": "your-output"}</code>.
+        <b>Note:</b> For images, use <code>data:image/png;base64,...</code> URLs. For text, return <code>{'{"result": "your-output"}'}</code>.
       </p>
     </div>
   );
