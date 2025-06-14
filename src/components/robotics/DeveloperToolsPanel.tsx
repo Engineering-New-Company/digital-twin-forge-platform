@@ -3,6 +3,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Cpu, UploadCloud, Camera, MessageSquareText, FileText } from "lucide-react";
 import RunCVModal from "./RunCVModal";
+import RoboticsDevDocs from "./RoboticsDevDocs";
 
 const actions = [
   {
@@ -105,7 +106,6 @@ const DeveloperToolsPanel = () => {
                     <Button size="sm" variant="ghost" onClick={() => setDocsOpen(false)}>Close</Button>
                   </div>
                   <div>
-                    {/* Render Markdown - for now, simple formatting */}
                     <RoboticsDevDocs />
                   </div>
                 </div>
@@ -119,7 +119,7 @@ const DeveloperToolsPanel = () => {
 };
 
 // Simple Markdown component inline (for preview: could use ReactMarkdown for real parsing if needed)
-function RoboticsDevDocs() {
+function RoboticsDevDocsOriginal() {
   return (
     <div className="prose prose-sm max-w-none dark:prose-invert">
       <h2>Extending Robotics Developer Tools</h2>
