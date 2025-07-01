@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Stats from "@/components/Stats";
-import PricingSection from "@/components/PricingSection";
 
 const Index = () => {
   return (
@@ -15,20 +14,19 @@ const Index = () => {
       <Hero />
       <Stats />
       <Features />
-      <PricingSection />
       
-      {/* Simplified CTA Section */}
-      <section className="py-16 bg-slate-800 border-t border-slate-700">
+      {/* Enhanced CTA Section */}
+      <section className="py-20 bg-slate-800 border-t border-slate-700">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-2xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Transform Your Manufacturing?
           </h2>
-          <p className="text-lg text-slate-300 mb-8 max-w-xl mx-auto">
-            Join industry leaders preventing costly recalls and accelerating product launches.
+          <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+            Join industry leaders preventing costly recalls and accelerating product launches with AI-powered digital twin technology.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white">
-              Get Started
+              Get Started Free
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button size="lg" variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-700 hover:text-white">
@@ -36,6 +34,12 @@ const Index = () => {
               See Demo
             </Button>
           </div>
+          <Link to="/pricing">
+            <Button variant="outline" className="border-emerald-600 text-emerald-400 hover:bg-emerald-600 hover:text-white">
+              View Pricing Plans
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </div>
       </section>
     </div>
